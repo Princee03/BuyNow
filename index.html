@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUYNOW-Ecommerce</title>
+    <link rel="icon" href="https://i.pinimg.com/474x/db/95/9d/db959d6c4ab7f85dc44dc9a3ffacdd75.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+ <!-- Nav bar -->
+       <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center mb-2" href="#">
+            <img src="https://i.pinimg.com/474x/db/95/9d/db959d6c4ab7f85dc44dc9a3ffacdd75.jpg" alt="Logo" height="50">
+            <span class="ms-2 fs-4 fw-bold">BuyNow</span>
+           </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#deal-section">Deals</a>
+              </li>
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" id="men-link">Men</a></li>
+                  <li><a class="dropdown-item" href="#" id="women-link">Women</a></li>
+                  <li><a class="dropdown-item" href="#" id="kids-link">Kids</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#" id="accessories-link">Accessories</a></li>
+                  <li><a class="dropdown-item" href="#" id="all-products-link">All Products</a></li>
+
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+
+
+            
+            <!-- Cart -->
+<button class="btn btn-success position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
+  <i class="fas fa-shopping-cart fs-5"></i>
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">0</span>
+</button>
+</nav>
+
+      <!-- Offcanvas Cart -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Your Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="cart-items"></div>
+    <hr>
+    <div class="d-flex justify-content-between">
+      <strong>Total:</strong>
+      <strong>₹<span id="cart-total">0</span></strong>
+    </div>
+    <button class="btn btn-success w-100 mt-3">Checkout</button>
+  </div>
+</div>
+
+
+      <!--Home Section -->
+<section class="home">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Mega Sale is Live!</h1>
+      <p class="lead">Get up to 50% off on selected products</p>
+      <a href="#product-container" class="btn btn-light btn-outline-success btn-lg mt-3">Shop Now</a>
+    </div>
+  </section>
+ 
+  <!-- Category -->
+  <section class="mb-5">
+    <div class="container text-center">
+      <h2 class="display-6 m-5 fw-bold text-light">Shop By Category</h2>
+      <div class="row g-4">
+
+        <div class="col-md-3">
+          <div class="card category-card" data-category="Men">
+           
+            <div class="card-body">
+              <img src="https://www.egypte-market.com/wp-content/uploads/2021/02/men-clothing-category.jpeg" class="card-img-top" alt="Men">
+              <h5 class="card-title mt-3">Men</h5>
+              <div class="card-footer">
+              <button class="btn btn-success mt-3">View Products</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card category-card" data-category="Women">
+            <div class="card-body">
+              <img src="https://i.pinimg.com/736x/d7/e4/12/d7e4125d356eb019a67777c0904659de.jpg" class="card-img-top" alt="Women">
+              <h5 class="card-title mt-3">Women</h5>
+              <div class="card-footer">
+                <button class="btn btn-success mt-3">View Products</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card category-card" data-category="Kids">
+          <div class="card-body">
+              <img src="https://jujujam.in/cdn/shop/files/Denim_Baby_Boys_Girls_Jumpsuit_With_3D_Teddy_Bear_2.jpg?v=1726222321&width=533" class="card-img-top" alt="Kids">
+              <h5 class="card-title mt-3">Kids</h5>
+              <div class="card-footer">
+                <button class="btn btn-success mt-3">View Products</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card category-card"  data-category="Accessories">
+            <div class="card-body">
+              <img src="https://img.freepik.com/premium-photo/beauty-blog-frame-concept-woman-clothes-accessories-watches-sunglasses-bracelet-necklace-rings-lipstick-white-background-flat-lay-top-view-trendy-fashion-feminine-background_408798-8362.jpg" class="card-img-top" alt="Accessories">
+              <h5 class="card-title mt-3">Accessories</h5>
+              <div class="card-footer">
+                <button class="btn btn-success mt-3">View Products</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+ <!--Deals-->
+<section class="py-5" id="deal-section">
+    <div class="container text-center">
+      <h2 class="display-6 mb-4 text-light fw-bold">Deals Of The Day</h2>
+      <div class="row justify-content-center g-4">
+        
+        <!-- Deal 1 -->
+        <div class="col-md-8 col-lg-6">
+          <div class="card deal-card border-dark border-3 shadow-sm overflow-hidden">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-5">
+                <img src="https://www-konga-com-res.cloudinary.com/f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/F/C/186085_1646940634.jpg" class="img-fluid h-100 object-fit-cover deal-img" alt="Headphones">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-start">
+                  <h5 class="card-title fw-bold">Noise Cancelling Headphones</h5>
+                  <p class="card-text mb-1">
+                    <span class="text-muted"><del>₹1999</del></span>
+                    <span class="text-dark fw-bold ms-2 fs-5">₹999</span>
+                  </p>
+                  <p class="card-text small">Premium wireless headphones with deep bass and noise cancellation.</p>
+                  <span class="badge bg-dark mb-3">🔥 Limited Time Deal</span><br>
+                  <a href="#" class="btn btn-success btn-sm">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Deal 2 -->
+        <div class="col-md-8 col-lg-6">
+          <div class="card deal-card border-dark border-3 shadow-sm overflow-hidden">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-5">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/12/SR/PG/ZB/12959365/m5-smart-fitness-band-500x500.jpg" class="img-fluid h-100 object-fit-cover deal-img" alt="Fitness Band">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body text-start">
+                  <h5 class="card-title fw-bold">Smart Fitness Band</h5>
+                  <p class="card-text mb-1">
+                    <span class="text-muted"><del>₹1250</del></span>
+                    <span class="text-dark fw-bold ms-2 fs-5">₹850</span>
+                  </p>
+                  <p class="card-text small">Track your heart rate, steps, and sleep all day long with this sleek fitness tracker.</p>
+                  <span class="badge bg-dark mb-3">🔥 Limited Time Deal</span><br>
+                  <a href="#" class="btn btn-success btn-sm">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+ 
+  <div class="container my-4">
+    <!-- Search Form -->
+    <form class="d-flex mb-4" role="search">
+      <div class="input-group">
+        <span class="input-group-text bg-white border-end-0">
+          <i class="fas fa-search text-muted"></i>
+        </span>
+        <input 
+          id="searchInput" 
+          class="form-control border-start-0" 
+          type="search" 
+          placeholder="Search Products Here..." 
+          aria-label="Search"
+        >
+      </div>
+    </form>
+  
+    <!-- Product Cards Container -->
+    <div class="row" id="productContainer">
+      <!-- Your product cards will be here -->
+    </div>
+  </div>
+  
+  <!-- All products -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="display-6 mb-4 text-center text-light fw-bold" id="category-heading">All Products</h2>
+      <div class="row" id="product-container">
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact -->
+<section id="contact" style="background-color: #f1f1f1; padding: 50px 0;">
+  <div class="container">
+    <h2 class=" display-6 text-center fw-bold">Contact Us</h2>
+    <div class="row g-4 text-center">
+      
+      <!-- Support-->
+      <div class="col-md-6">
+        <h5>Support</h5>
+        <ul class="list-unstyled">
+          <li><strong>Phone:</strong> +91 98765 43210</li>
+          <li><strong>Email:</strong> support@buynow.com</li>
+          <li><strong>Hours:</strong> Mon–Sat, 9AM–6PM</li>
+        </ul>
+      </div>
+
+      <!-- Office-->
+      <div class="col-md-6">
+        <h5>Office</h5>
+        <p>BuyNow E-Commerce Pvt Ltd</p>
+        <p>123 Market Street, Bengaluru, KA</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row mt-4 justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-info w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Toast Notification -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+  <div id="liveToast" class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body" id="toastMessage">
+        <!-- Message will come here -->
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+
+
+  <script>
+    
+
+  const productContainer = document.getElementById("product-container");
+  const cartItems = document.getElementById("cart-items");
+  const cartCount = document.getElementById("cart-count");
+  const cartTotal = document.getElementById("cart-total");
+  const searchInput = document.getElementById('searchInput');
+   
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+updateCart();
+
+
+let allProductsData = {};
+const categoryHeading = document.getElementById("category-heading");
+
+
+  // Fetch and Display Products
+  fetch('Pro.json')
+  .then(res => res.json())
+  .then(data => {
+    allProductsData = data; 
+    displayProducts([...data.Men, ...data.Women, ...data.Kids, ...data.Accessories]); // Show all by default
+
+    // Add event listeners to category cards
+document.querySelectorAll(".category-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const category = card.getAttribute("data-category");
+    categoryHeading.textContent = `${category} Products`;
+    displayProducts(allProductsData[category]);
+    categoryHeading.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+
+    const categoryHeading = document.getElementById("category-heading");
+    // Add category filter events
+    document.getElementById("men-link").addEventListener("click", () => {
+      displayProducts(allProductsData.Men);
+      setActiveLink("men-link");
+      categoryHeading.textContent = "Men Products";
+      categoryHeading.scrollIntoView({ behavior: "smooth" });
+
+    });
+    document.getElementById("women-link").addEventListener("click", () => {
+      displayProducts(allProductsData.Women);
+      setActiveLink("women-link");
+      categoryHeading.textContent = "Women Products";
+      categoryHeading.scrollIntoView({ behavior: "smooth" });
+
+    });
+    document.getElementById("kids-link").addEventListener("click", () => {
+      displayProducts(allProductsData.Kids);
+      setActiveLink("kids-link");
+      categoryHeading.textContent = "Kids Products";
+      categoryHeading.scrollIntoView({ behavior: "smooth" });
+
+    });
+    document.getElementById("accessories-link").addEventListener("click", () => {
+      displayProducts(allProductsData.Accessories);
+      setActiveLink("accessories-link");
+      categoryHeading.textContent = "Accessories";
+      categoryHeading.scrollIntoView({ behavior: "smooth" });
+
+    });
+    document.getElementById("all-products-link").addEventListener("click", () => {
+  displayProducts([...allProductsData.Men, ...allProductsData.Women, ...allProductsData.Kids, ...allProductsData.Accessories]);
+  setActiveLink("all-products-link");
+  categoryHeading.textContent = "All Products";
+  categoryHeading.scrollIntoView({ behavior: "smooth" });
+
+});
+
+  });
+
+  function setActiveLink(linkId) {
+  const links = document.querySelectorAll(".dropdown-item");
+  links.forEach(link => link.classList.remove("active"));
+  document.getElementById(linkId).classList.add("active");
+}
+
+
+
+
+
+function displayProducts(products) {
+  productContainer.innerHTML = "";
+  products.forEach(product => {
+    const col = document.createElement('div');
+    col.className = 'col-md-3 mb-4';
+    const productId = product.name.replace(/\s+/g, '-') + '-' + product.price;
+
+    col.innerHTML = `
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <img src="${product.img}" class="card-img-top" style="height:200px; object-fit: cover;">
+          <center>
+            <h5 class="card-title mt-3 fs-4">${product.name}</h5>
+            <p class="card-text mt-3">₹${product.price}</p>
+            <div class="card-footer">
+              <button id="${productId}" class="btn">Loading...</button>
+            </div>
+          </center>
+        </div>
+      </div>
+    `;
+
+    productContainer.appendChild(col);
+
+    const button = document.getElementById(productId);
+    
+    // Check if product is already in cart
+    const isInCart = cart.find(item => item.name === product.name);
+
+    if (isInCart) {
+      button.textContent = "Remove from Cart";
+      button.classList.add("btn-danger");
+    } else {
+      button.textContent = "Add to Cart";
+      button.classList.add("btn-success");
+    }
+
+    // Attach click event
+    button.addEventListener('click', function () {
+      addOrRemoveFromCart(product, this);
+    });
+  });
+}
+
+function addOrRemoveFromCart(product, button) {
+  const index = cart.findIndex(item => item.name === product.name);
+
+  if (index > -1) {
+    // Product already in cart: Increase quantity instead of removing
+    cart[index].quantity += 1;
+    showToast(`${product.name} quantity increased!`, "success");
+  } else {
+    // Product not in cart: Add it with quantity 1
+    cart.push({
+      ...product, 
+      quantity: 1
+    });
+    button.textContent = "Remove from Cart";
+    button.classList.remove("btn-success");
+    button.classList.add("btn-danger");
+    showToast(`${product.name} added to cart!`, "success");
+  }
+
+  updateCart(); // Call your cart update function
+}
+
+function removeFromCart(index) {
+  const removedItem = cart[index];
+  cart.splice(index, 1);
+  updateCart();
+  updateProductButton(removedItem.name);
+}
+
+function updateProductButton(productName) {
+  const allButtons = document.querySelectorAll('button');
+  allButtons.forEach(button => {
+    if (button.textContent === "Remove from Cart" && button.id.includes(productName.replace(/\s+/g, '-'))) {
+      button.textContent = "Add to Cart";
+      button.classList.remove("btn-danger");
+      button.classList.add("btn-success");
+    }
+  });
+}
+
+  // Update Cart 
+  function updateCart() {
+  cartCount.textContent = cart.length;
+  cartItems.innerHTML = "";
+
+  if (cart.length === 0) {
+    cartItems.innerHTML = "<p>Your cart is empty.</p>";
+    cartTotal.textContent = "₹0";
+    return;
+  }
+
+  let total = 0;
+  cartItems.innerHTML = ""; // Clear previous cartItems before re-adding
+
+  cart.forEach((item, index) => {
+    total += item.price * item.quantity; // calculate subtotal
+
+    const div = document.createElement("div");
+    div.className = "d-flex justify-content-between align-items-center mb-3 border-bottom pb-2";
+    div.innerHTML = `
+      <div class="d-flex align-items-center">
+        <img src="${item.img}" alt="${item.name}" style="height: 150px; width: 200px; object-fit: cover; margin-right: 10px;">
+        <div>
+          <h6 class="mb-1">${item.name}</h6>
+          <p class="mb-0">Price: ₹${item.price}</p>
+          <div class="d-flex align-items-center">
+            <button class="btn btn-sm btn-primary" onclick="changeQuantity(${index}, -1)">-</button>
+            <span class="mx-2">${item.quantity}</span>
+            <button class="btn btn-sm btn-primary" onclick="changeQuantity(${index}, 1)">+</button>
+          </div>
+          <p class="mb-0">Subtotal: ₹${item.price * item.quantity}</p>
+          <button class="btn btn-sm btn-danger mt-2" onclick="removeFromCart(${index})">Remove</button>
+        </div>
+      </div>
+    `;
+    cartItems.appendChild(div);
+  });
+
+
+  cartTotal.textContent = ` ${total}`;
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function changeQuantity(index, change) {
+  if (cart[index].quantity + change > 0) {
+    cart[index].quantity += change; // Update quantity
+  } else {
+    cart.splice(index, 1); // Remove product if quantity reaches 0
+  }
+  updateCart(); // Refresh cart view
+}
+
+
+
+
+  searchInput.addEventListener('input', () => {
+      const keyword = searchInput.value.toLowerCase();
+      const allProducts = [...allProductsData.Men, ...allProductsData.Women, ...allProductsData.Kids, ...allProductsData.Accessories];
+      
+      const filteredProducts = allProducts.filter(product => 
+        product.name.toLowerCase().includes(keyword)
+      );
+
+      displayProducts(filteredProducts);
+    });
+
+    // Function to show toast
+function showToast(message, color = "primary") {
+  const toastElement = document.getElementById("liveToast");
+  const toastMessage = document.getElementById("toastMessage");
+
+  // Set the message and color
+  toastMessage.textContent = message;
+  toastElement.className = `toast align-items-center text-white bg-${color} border-0`;
+
+  const toast = new bootstrap.Toast(toastElement);
+  toast.show();
+}
+
+
+
+ 
+</script>
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+ 
+  background: url('https://media.istockphoto.com/id/670692648/vector/defocused-abstract-background.jpg?s=612x612&w=0&k=20&c=9MzcBzH8JtaLfOCbd4WWBcPkXY1xkkS99vEn8S2tQPk=') no-repeat center center/cover;
+  
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(10, 44, 33);
+  }
+  .nav-link:hover {
+    color:  rgb(10, 44, 33)!important;
+  }
+  .btn-cart {
+    position: relative;
+    color: rgb(10, 44, 33);
+
+  }
+  .btn-cart span {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+   
+  }
+
+  .home{
+    background: url('https://media.istockphoto.com/id/670692648/vector/defocused-abstract-background.jpg?s=612x612&w=0&k=20&c=9MzcBzH8JtaLfOCbd4WWBcPkXY1xkkS99vEn8S2tQPk=') no-repeat center center/cover;
+    height: 300px;
+    color: rgb(247, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  .category-card img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+
+  .deal-card {
+    transition: transform 0.3s ease;
+    border-width: 2px;
+  }
+  .deal-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(220, 53, 69, 0.3);
+  }
+  .deal-img {
+    object-fit: cover;
+    height: 100%;
+    border-right: 2px solid #0a0a0a;
+  }
+
+  .dropdown-item.active {
+    background-color:white;
+    color: rgb(10, 44, 33);;
+    font-weight: bold;
+  }
+
+  .category-card{
+    transition: transform 0.3s ease;
+    border-width: 2px;
+  }
+.category-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(4, 3, 39, 0.3);
+
+}  
+
+
+

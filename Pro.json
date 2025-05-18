@@ -1,0 +1,210 @@
+{ 
+    "Men" : [
+        {
+  "id": 1,
+  "name": "Shirt",
+  "price": 725,
+  "img": "https://cdn-media.powerlook.in/catalog/product/d/p/dp1203321.jpg?aio=w-640"
+},
+{
+  "id": 2,
+  "name": "Shoes",
+  "price": 1299,
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvYjKKJXOOfCddWY8IZ7fgwjoRy3hVCb0mlQ&s"
+},
+{
+  "id": 3,
+  "name": "Blazer",
+  "price": 1790,
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA0afKFGV8UTBSw_wbpDYJyxqDVhc66MAVjQ&s"
+},
+{
+  "id": 4,
+  "name": "T-Shirt",
+  "price": 339,
+  "img": "https://www.jiomart.com/images/product/original/rvxqd4wmk4/eyebogler-polo-tshirts-for-men-t-shirt-for-men-men-t-shirt-men-tshirt-tshirt-for-men-t-shirts-tshirts-oversized-tshirt-men-tshirt-men-s-polo-neck-regular-fit-half-sleeves-colorblocked-t-shirt-printed-tshirt-product-images-rvxqd4wmk4-2-202503181354.jpg?im=Resize=(500,630)"
+},
+{
+  "id": 5,
+  "name": "Hoodie",
+  "price": 1000,
+  "img": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/31015238/2024/10/17/169fdb8a-7984-4145-89b4-8b988dda8f581729152817241-NOBERO-Men-Hooded-Sweatshirt-8561729152816712-1.jpg"
+},
+{
+  "id": 6,
+  "name": "Swimsuit",
+  "price": 2500,
+  "img": "https://www.tutublue.com/cdn/shop/files/Men_sBlackFull-BodySuit2.jpg?v=1740368253"
+},
+{
+  "id": 7,
+  "name": "Trench Coat",
+  "price": 1200,
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClcNvR4150YTs_tAwSZ5zEP3Lbne0533O2Q&s"
+},
+{
+  "id": 8,
+  "name": "Suit",
+  "price": 1500,
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu9mdA33TCV4_bcTgj9inHA7tkwc2KnW_51g&s"
+}
+
+],
+
+"Women": [
+{
+  "id": 1,
+  "name": "Kurti",
+  "price": 550,
+  "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR9SD_1QHiEIh8C_GugOtTwBm7JchrkxxSjyXQifXzF5x18cbhrSBOewi3cNIuxN-Zc-xJ2mRkrImoszrsLz_r2RKHAYT7g-yoMBSJyrh9tvC863kK2VXpdxQ"
+},
+{
+  "id": 2,
+  "name": " Denim Jacket",
+  "price": 625,
+  "img": "https://images-cdn.ubuy.co.in/653e6b609e49c12eec240017-beskie-oversized-denim-jacket-for-women.jpg"
+},
+{
+    "id": 3,
+    "name": "Top",
+    "price": 420,
+    "img": "https://rukminim1.flixcart.com/image/300/300/xif0q/top/w/b/q/-original-imaguza66yrs4h7a.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Jeans",
+    "price": 549,
+    "img": "https://uspoloassn.in/cdn/shop/products/1_03199a04-5ce3-4558-b074-453da8f597dd.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Skirt",
+    "price": 320,
+    "img": "https://images-na.ssl-images-amazon.com/images/I/51WeIQBp8mL._SL500_._AC_SL500_.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Sweater",
+    "price": 800,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjSbC8gSYqs6W1pX9IYzk86PI1IHTmt41U6g&s"
+  },
+  {
+    "id": 7,
+    "name": "Sheath Dress",
+    "price": 900,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8sGZ-9V_Ko9y9-do11GpViXbbhmtT7BCkA&s"
+  },
+  {
+    "id": 8,
+    "name": "Saree",
+    "price": 835,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQusw6fNmqp8VfjKZeN6_YHkdZ5-SmrnoOCjA&s"
+  }
+ 
+ 
+],
+
+"Kids": [
+{
+  "id": 1,
+  "name": "T-Shirt",
+  "price": 380,
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2w4rmGxcL7eV6Y9aJOaiL_bmDW0-FK6oRdg&s"
+},
+{
+  "id": 2,
+  "name": "Toy Car",
+  "price": 1199,
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqunRbS62-dQAqriczw1YaCABQ8GbNkMqVlQ&s"
+},
+{
+    "id": 3,
+    "name": "Gown",
+    "price": 605,
+    "img": "https://5.imimg.com/data5/SELLER/Default/2023/6/315940106/TF/JM/JN/190187803/kids-girls-wedding-dress.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Barbie doll",
+    "price": 295,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt25TaibPa8CUO6PY8DcCdYmWyW_vM8FF--g&s"
+  },
+  {
+    "id": 5,
+    "name": "Blazer set",
+    "price":300,
+    "img": "https://cdn.sapnaaz.com/uploads/2024/11/17110102/RS0023-14.webp"
+  },
+  {
+    "id": 6,
+    "name": "Beauty Kit",
+    "price": 200,
+    "img": "https://m.media-amazon.com/images/I/81wf9TK8siL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Shorts",
+    "price": 400,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJksupcEImwyOhGnQoyX5FP241YBMg3JsDQ&s"
+  },
+  {
+    "id": 8,
+    "name": "Teddy Bear",
+    "price": 500,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR56MD2FVEm9ZDOh9_YzxSRlPLFb1WlxcGQA&s"
+  }
+  
+],
+
+"Accessories": [
+{
+  "id": 1,
+  "name": "Sunglass",
+  "price": 414,
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjH49xcvRF_6-5xX6NDa_Aixp4NGgLTlYbVg&s"
+},
+{
+  "id": 2,
+  "name": "Earring",
+  "price": 489,
+  "img": "https://img.tatacliq.com/images/i11/437Wx649H/MP000000017501701_437Wx649H_202305110122381.jpeg"
+},
+{
+    "id": 3,
+    "name": "Purse",
+    "price":220,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAWsVP2Ldl5TrNZBZmSOAgIsYY8gU0jMlyqw&s"
+  },
+  {
+    "id": 4,
+    "name": "Bangles",
+    "price": 330,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBuShS1obiSrQSYJPRflkHffl8mcT24nv55w&s"
+  },
+  {
+    "id": 5,
+    "name": "Cap",
+    "price": 210,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmXm-IkL3Rwksnh5CIG1x2hnHO7rY6wGFpuQ&s"
+  },
+  {
+    "id": 6,
+    "name": "Ring",
+    "price": 340,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYpuLHcUstLbgHhDxLDnzStL8HTn2QNYWfdA&s"
+  },
+  {
+    "id": 7,
+    "name": "Watch",
+    "price": 627,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlg1uJSWpMOXfYvcYgQXHBlrcqgexzVNQ58g&s"
+  },
+  {
+    "id": 8,
+    "name": "Bracelet",
+    "price": 700,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlP46R4H8ekgAdyPtKIY4FxjjJ0cdzpfxPiw&s"
+  }
+ 
+]
+}
